@@ -6,7 +6,7 @@ Throughout the process of contributing, there's one thing we'd like you to remem
 
 ## Reporting Bugs
 
-The [bug tracker](https://github.com/jasperproject/jasper-client/issues) at Github is for reporting bugs in Jasper. If you encounter problems during installation or compilation of one of Jasper's dependencies for example, do not create a new issue here. Please open a new thread in the [support forum](https://groups.google.com/forum/#!forum/jasper-support-forum) instead. Also, make sure that it's not a usage issue.
+The [bug tracker](https://github.com/aplawson/jasper-client/issues) at Github is for reporting bugs in Jasper. If you encounter problems during installation or compilation of one of Jasper's dependencies for example, do not create a new issue here. Please open a new thread in the [support forum](https://groups.google.com/forum/#!forum/jasper-support-forum) instead. Also, make sure that it's not a usage issue.
 
 If you think that you found a bug and that you're using the most recent version of Jasper, please include a detailed description what you did and how to reproduce the bug. If Jasper crashes, run it with `--debug` as command line argument and also include the full stacktrace (not just the last line). If you post output, put it into a [fenced code block](https://help.github.com/articles/github-flavored-markdown/#fenced-code-blocks). Last but not least: have a look at [Simon Tatham's "How to Report Bugs Effectively"](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html) to learn how to write a good bug report.
 
@@ -19,6 +19,7 @@ There are a few key philosophies to preserve while designing features for Jasper
 1. **The core Jasper software (`jasper-client`) must remain decoupled from any third-party web services.** For example, the Jasper core should never depend on Google Translate in any way. This is to avoid unnecessary dependences on web services that might change or become paid over time.
 2. **The core Jasper software (`jasper-client`) must remain decoupled from any paid software or services.** Of course, you're free to use whatever you'd like when running Jasper locally or in a fork, but the main branch needs to remain free and open-source.
 3. **Jasper should be _usable_ by both beginner and expert programmers.** If you make a radical change, in particular one that requires some sort of setup, try to offer an easy-to-run alternative or tutorial. See, for example, the profile populator ([`jasper-client/client/populate.py`](https://github.com/jasperproject/jasper-client/blob/master/client/populate.py)), which abstracts away the difficulty of correctly formatting and populating the user profile.
+4. **Jasper is being actively refactored to use Python 3.** While Jasper works with Python2 (commonly 2.7), positively **_no_** further deveolopment will be made with code written in Python 2 as it is officially deprecated as of JAN-2-2020.
 
 ### DOs and DON'Ts
 
