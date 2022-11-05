@@ -16,8 +16,8 @@ import shutil
 from abc import ABCMeta, abstractmethod, abstractproperty
 import yaml
 
-import brain
-import jasperpath
+from . import brain
+from . import jasperpath
 
 from g2p import PhonetisaurusG2P
 try:

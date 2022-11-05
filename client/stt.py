@@ -6,15 +6,15 @@ import json
 import tempfile
 import logging
 import urllib
-import urlparse
+import urllib.parse
 import re
 import subprocess
 from abc import ABCMeta, abstractmethod
 import requests
 import yaml
-import jasperpath
-import diagnose
-import vocabcompiler
+from . import jasperpath
+from . import diagnose
+from . import vocabcompiler
 
 
 class AbstractSTTEngine(object):
